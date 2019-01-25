@@ -1,0 +1,26 @@
+{
+    "OaiPmhETL": {
+        "parameters": [
+            {
+                "key": "hostUrl",
+                "type": "StringParameter",
+                "value": "https://oai.datacite.org/oai"
+            },
+            {
+                "key": "logoUrl",
+                "type": "StringParameter",
+                "value": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Ifo_logo.svg/500px-Ifo_logo.svg.png"
+            },
+            {
+                "key": "metadataPrefix",
+                "type": "StringParameter",
+                "value": "datacite"
+            },
+            {
+                "key": "set",
+                "type": "StringParameter",
+                "value": "ZBW.IFO"
+            }
+        ]
+    }
+}
