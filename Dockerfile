@@ -1,8 +1,8 @@
-# GeRDI Harvester Image for DATACITE/IFO-Harvester 
+# GeRDI Harvester Image for DATACITE/IFO-Harvester
 
-FROM docker-registry.gerdi.research.lrz.de:5043/harvest/oai-pmh:0.5.0-test1
+FROM docker-registry.gerdi.research.lrz.de:5043/harvest/oai-pmh:0.5.0-test2
 
-COPY config.json prepareConfig.sh $JETTY_BASE/
+COPY config.json /var/lib/jetty/config/OaiPmhHarvesterService/config.json
 
 USER root
 RUN chown -R jetty:jetty $JETTY_BASE
