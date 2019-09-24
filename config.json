@@ -1,49 +1,6 @@
 {
-    "AllETLs": {
-        "parameters": [
-            {
-                "key": "concurrentHarvest",
-                "type": "BooleanParameter",
-                "value": "false"
-            },
-            {
-                "key": "forced",
-                "type": "BooleanParameter",
-                "value": "true"
-            }
-        ]
-    },
-    "HttpRequests": {
-        "parameters": [
-            {
-                "key": "readFromDisk",
-                "type": "BooleanParameter",
-                "value": "false"
-            },
-            {
-                "key": "retries",
-                "type": "IntegerParameter",
-                "value": "-1"
-            },
-            {
-                "key": "writeToDisk",
-                "type": "BooleanParameter",
-                "value": "false"
-            }
-        ]
-    },
     "OaiPmhETL": {
         "parameters": [
-            {
-                "key": "enabled",
-                "type": "BooleanParameter",
-                "value": "true"
-            },
-            {
-                "key": "from",
-                "type": "StringParameter",
-                "value": ""
-            },
             {
                 "key": "hostUrl",
                 "type": "StringParameter",
@@ -60,24 +17,9 @@
                 "value": "datacite"
             },
             {
-                "key": "rangeFrom",
-                "type": "IntegerParameter",
-                "value": "0"
-            },
-            {
-                "key": "rangeTo",
-                "type": "IntegerParameter",
-                "value": "2147483647"
-            },
-            {
                 "key": "set",
                 "type": "StringParameter",
                 "value": "ZBW.IFO"
-            },
-            {
-                "key": "until",
-                "type": "StringParameter",
-                "value": ""
             }
         ]
     },
@@ -89,22 +31,9 @@
                 "value": "ElasticSearchLoader"
             },
             {
-                "key": "password",
-                "type": "PasswordParameter"
-            },
-            {
-                "key": "size",
-                "type": "IntegerParameter",
-                "value": "1048576"
-            },
-            {
                 "key": "url",
                 "type": "StringParameter",
-                "value": "http://elasticsearch-data.default.svc.cluster.local:9200/gerdi/metadata"
-            },
-            {
-                "key": "userName",
-                "type": "StringParameter"
+                "value": "http://elasticsearch-data.default.svc.cluster.local:9200/gerdi"
             }
         ]
     }
